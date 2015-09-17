@@ -6,7 +6,7 @@ namespace SOLID.ISP
 {
     public class Crawler
     {
-        PageRetriever requestManager = new PageRetriever();
+        PageRetriever pageRetriever = new PageRetriever();
 
         private IImageRecorder fileManager;
 
@@ -33,7 +33,7 @@ namespace SOLID.ISP
                 (this.fileManager as DatabaseFileManager).SetConnectionString("data source=./sqlexpress;user=sa;password=pepe");
             }
 
-            var doc = requestManager.GetPage();
+            var doc = pageRetriever.GetPage();
 
             Console.WriteLine("crawling data");
 
@@ -54,7 +54,7 @@ namespace SOLID.ISP
 
             foreach (var url in urls)
             {
-                byte[] imageBytes = requestManager.GetImage(@"http://www.kinetica-solutions.com" + url);
+                byte[] imageBytes = pageRetriever.GetImage(@"http://www.kinetica-solutions.com" + url);
                 this.fileManager.SaveImage(imageBytes, "../../images/" + url.Split('/').Last());
             }
 

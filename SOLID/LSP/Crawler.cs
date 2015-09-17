@@ -6,7 +6,7 @@ namespace SOLID.LSP
 {
     public class Crawler
     {
-        PageRetriever requestManager = new PageRetriever();
+        PageRetriever pageRetriever = new PageRetriever();
 
         private FileManager fileManager;
 
@@ -34,7 +34,7 @@ namespace SOLID.LSP
                 (this.fileManager as DatabaseFileManager).SetConnectionString("data source=./sqlexpress;user=sa;password=pepe");
             }
 
-            var doc = requestManager.GetPage();
+            var doc = pageRetriever.GetPage();
 
             Console.WriteLine("crawling data");
 
@@ -55,7 +55,7 @@ namespace SOLID.LSP
 
             foreach (var url in urls)
             {
-                byte[] imageBytes = requestManager.GetImage(@"http://www.kinetica-solutions.com" + url);
+                byte[] imageBytes = pageRetriever.GetImage(@"http://www.kinetica-solutions.com" + url);
                 this.fileManager.SaveImage(imageBytes, "../../images/" + url.Split('/').Last());
             }
 

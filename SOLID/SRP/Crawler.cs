@@ -9,13 +9,13 @@ namespace SOLID.SRP
 {
     public class Crawler
     {
-        PageRetriever requestManager = new PageRetriever();
+        PageRetriever pageRetriever = new PageRetriever();
         FileManager fileManager = new FileManager();
 
         public void Process()
         {
 
-            var doc = requestManager.GetPage();
+            var doc = pageRetriever.GetPage();
 
             Console.WriteLine("crawling data");
 
@@ -36,7 +36,7 @@ namespace SOLID.SRP
 
             foreach (var url in urls)
             {
-                byte[] imageBytes = requestManager.GetImage(@"http://www.kinetica-solutions.com" + url);
+                byte[] imageBytes = pageRetriever.GetImage(@"http://www.kinetica-solutions.com" + url);
                 this.fileManager.SaveImage(imageBytes, "../../images/" + url.Split('/').Last());
             }
 

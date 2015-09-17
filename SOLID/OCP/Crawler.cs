@@ -6,7 +6,7 @@ namespace SOLID.OCP
 {
     public class Crawler
     {
-        PageRetriever requestManager = new PageRetriever();
+        PageRetriever pageRetriever = new PageRetriever();
 
         private FileManager fileManager;
 
@@ -28,7 +28,7 @@ namespace SOLID.OCP
         public void Process()
         {
 
-            var doc = requestManager.GetPage();
+            var doc = pageRetriever.GetPage();
 
             Console.WriteLine("crawling data");
 
@@ -49,7 +49,7 @@ namespace SOLID.OCP
 
             foreach (var url in urls)
             {
-                byte[] imageBytes = requestManager.GetImage(@"http://www.kinetica-solutions.com" + url);
+                byte[] imageBytes = pageRetriever.GetImage(@"http://www.kinetica-solutions.com" + url);
                 this.fileManager.SaveImage(imageBytes, "../../images/" + url.Split('/').Last());
             }
 
