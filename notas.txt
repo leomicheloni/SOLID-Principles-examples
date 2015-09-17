@@ -1,0 +1,37 @@
+SOLID
+
+acrónimo de un conjunto de principios de POO
+persiguen que el software
+robusto, claro mantenible y extensible
+ligado con el desarrollo ágil
+arquitectura emergente
+refactor
+
+Cada sigla es un principios
+
+S: Single resposability priciple
+O: Open close principle
+L: Liskov sustitution principle
+I: Interface segregation principle
+D: Dependency inversion principle
+
+S:
+Cada clase debe tener una única responsabilidad
+Una única razón para cambiar
+Alta cohesión
+
+O: 
+Aplica a todas las entidades del software
+Debe estar cerrada para la modificación pero abierta para la extensión
+
+L:
+si S es hijo de T entonces cualquer objeto T tiene que poder ser reemplazado por S
+
+I:
+nu cliente no debe ser forzado a implementar métodos que no usa
+
+D:
+un módulo de alto nivel de debe depender de una de nivel inferior
+
+
+
