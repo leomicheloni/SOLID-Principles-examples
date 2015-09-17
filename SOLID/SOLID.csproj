@@ -38,6 +38,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +50,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crawler.cs" />
+    <Compile Include="DIP\Crawler.cs" />
+    <Compile Include="DIP\DatabaseFileManager.cs" />
+    <Compile Include="DIP\FileManager.cs" />
+    <Compile Include="DIP\IImageRecorder.cs" />
+    <Compile Include="DIP\RequestManager.cs" />
+    <Compile Include="ISP\Crawler.cs" />
+    <Compile Include="ISP\DatabaseFileManager.cs" />
+    <Compile Include="ISP\FileManager.cs" />
+    <Compile Include="ISP\IImageRecorder.cs" />
+    <Compile Include="ISP\RequestManager.cs" />
     <Compile Include="LSP\Crawler.cs" />
     <Compile Include="LSP\DatabaseFileManager.cs" />
     <Compile Include="LSP\FileManager.cs" />

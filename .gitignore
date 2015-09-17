@@ -1,3 +1,5 @@
 /packages
 /SOLID/bin
 /SOLID/obj
+*.suo
+/.vs/SOLID/v14/*.suo
