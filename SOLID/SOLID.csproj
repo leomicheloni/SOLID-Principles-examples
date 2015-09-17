@@ -49,36 +49,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ALL\ConsoleLogger.cs" />
+    <Compile Include="ALL\ILogger.cs" />
+    <Compile Include="ALL\IPageRetriever.cs" />
     <Compile Include="Crawler.cs" />
-    <Compile Include="DIP\Crawler.cs" />
-    <Compile Include="DIP\DatabaseFileManager.cs" />
-    <Compile Include="DIP\FileManager.cs" />
-    <Compile Include="DIP\IImageRecorder.cs" />
-    <Compile Include="DIP\PageRetriever.cs" />
-    <Compile Include="DIP\ServiceLocator.cs" />
-    <Compile Include="ISP\Crawler.cs" />
-    <Compile Include="ISP\DatabaseFileManager.cs" />
-    <Compile Include="ISP\FileManager.cs" />
-    <Compile Include="ISP\IImageRecorder.cs" />
-    <Compile Include="ISP\PageRetriever.cs" />
-    <Compile Include="LSP\Crawler.cs" />
-    <Compile Include="LSP\DatabaseFileManager.cs" />
-    <Compile Include="LSP\FileManager.cs" />
-    <Compile Include="LSP\PageRetriever.cs" />
-    <Compile Include="OCP\Crawler.cs" />
-    <Compile Include="OCP\DatabaseFileManager.cs" />
-    <Compile Include="OCP\FileManager.cs" />
-    <Compile Include="OCP\PageRetriever.cs" />
+    <Compile Include="5.DIP\Crawler.cs" />
+    <Compile Include="5.DIP\DatabaseFileManager.cs" />
+    <Compile Include="5.DIP\FileManager.cs" />
+    <Compile Include="5.DIP\IImageRecorder.cs" />
+    <Compile Include="5.DIP\PageRetriever.cs" />
+    <Compile Include="5.DIP\ServiceLocator.cs" />
+    <Compile Include="4.ISP\Crawler.cs" />
+    <Compile Include="4.ISP\DatabaseFileManager.cs" />
+    <Compile Include="4.ISP\FileManager.cs" />
+    <Compile Include="4.ISP\IImageRecorder.cs" />
+    <Compile Include="4.ISP\PageRetriever.cs" />
+    <Compile Include="3.LSP\Crawler.cs" />
+    <Compile Include="3.LSP\DatabaseFileManager.cs" />
+    <Compile Include="3.LSP\FileManager.cs" />
+    <Compile Include="3.LSP\PageRetriever.cs" />
+    <Compile Include="2.OCP\Crawler.cs" />
+    <Compile Include="2.OCP\DatabaseFileManager.cs" />
+    <Compile Include="2.OCP\FileManager.cs" />
+    <Compile Include="2.OCP\PageRetriever.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SRP\Crawler.cs" />
-    <Compile Include="SRP\FileManager.cs" />
-    <Compile Include="SRP\PageRetriever.cs" />
+    <Compile Include="1.SRP\Crawler.cs" />
+    <Compile Include="1.SRP\FileManager.cs" />
+    <Compile Include="1.SRP\PageRetriever.cs" />
+    <Compile Include="ALL\Crawler.cs" />
+    <Compile Include="ALL\DatabaseFileManager.cs" />
+    <Compile Include="ALL\FileManager.cs" />
+    <Compile Include="ALL\IImageRecorder.cs" />
+    <Compile Include="ALL\PageRetriever.cs" />
+    <Compile Include="ALL\ServiceLocator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
