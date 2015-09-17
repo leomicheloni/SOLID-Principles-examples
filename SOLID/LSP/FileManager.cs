@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
-namespace SOLID.SRP
+namespace SOLID.LSP
 {
-    class FileManager
+    public class FileManager
     {
-
-        public void SaveImage(byte[] imageBytes, string name)
+        public virtual void SaveImage(byte[] imageBytes, string name)
         {
             FileStream fs = new FileStream(name, FileMode.Create);
             BinaryWriter bw = new BinaryWriter(fs);

@@ -49,9 +49,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crawler.cs" />
+    <Compile Include="LSP\Crawler.cs" />
+    <Compile Include="LSP\DatabaseFileManager.cs" />
+    <Compile Include="LSP\FileManager.cs" />
+    <Compile Include="LSP\RequestManager.cs" />
+    <Compile Include="OCP\Crawler.cs" />
+    <Compile Include="OCP\DatabaseFileManager.cs" />
+    <Compile Include="OCP\FileManager.cs" />
+    <Compile Include="OCP\RequestManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SRP\Crawler.cs" />
+    <Compile Include="SRP\FileManager.cs" />
     <Compile Include="SRP\RequestManager.cs" />
   </ItemGroup>
   <ItemGroup>
