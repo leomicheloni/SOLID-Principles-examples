@@ -1,1 +1,1 @@
-# SOLID-Principles-examples
+# SOLID Principles examples
