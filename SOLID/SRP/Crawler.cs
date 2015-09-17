@@ -9,7 +9,7 @@ namespace SOLID.SRP
 {
     public class Crawler
     {
-        RequestManager requestManager = new RequestManager();
+        PageRetriever requestManager = new PageRetriever();
         FileManager fileManager = new FileManager();
 
         public void Process()

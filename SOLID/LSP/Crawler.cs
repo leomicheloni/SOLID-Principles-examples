@@ -6,7 +6,7 @@ namespace SOLID.LSP
 {
     public class Crawler
     {
-        RequestManager requestManager = new RequestManager();
+        PageRetriever requestManager = new PageRetriever();
 
         private FileManager fileManager;
 

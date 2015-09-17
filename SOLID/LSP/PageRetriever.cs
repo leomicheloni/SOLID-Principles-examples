@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SOLID.LSP
 {
-    class RequestManager
+    class PageRetriever
     {
         internal HtmlDocument GetPage()
         {

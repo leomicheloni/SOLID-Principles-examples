@@ -6,7 +6,7 @@ namespace SOLID.ISP
 {
     public class Crawler
     {
-        RequestManager requestManager = new RequestManager();
+        PageRetriever requestManager = new PageRetriever();
 
         private IImageRecorder fileManager;
 

@@ -1,15 +1,11 @@
 ﻿using HtmlAgilityPack;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SOLID.ISP
+namespace SOLID.OCP
 {
-    class RequestManager
+    class PageRetriever
     {
         internal HtmlDocument GetPage()
         {

@@ -7,9 +7,9 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID.SRP
+namespace SOLID.ISP
 {
-    class RequestManager
+    class PageRetriever
     {
         internal HtmlDocument GetPage()
         {
