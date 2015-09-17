@@ -51,6 +51,8 @@
     <Compile Include="Crawler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SRP\Crawler.cs" />
+    <Compile Include="SRP\RequestManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
